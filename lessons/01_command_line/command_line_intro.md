@@ -1,6 +1,6 @@
 # Before class
 
-* Install the text editor Atom
+* Install the text editor [VSCode](https://code.visualstudio.com/)
 * Install Anaconda
 
 # Outline of class agenda
@@ -127,9 +127,3 @@ There is a special set of symbols for the directory outside the one you are in, 
 If I'm still in my `Desktop` folder, then I go out of this folder with `cd ..`, I'll be back in `/Users/paul/`
 
 <img src="images/command_line_10.png" width="500">
-
-
-
-```python
-
-```
