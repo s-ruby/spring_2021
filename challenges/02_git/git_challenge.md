@@ -33,7 +33,11 @@ Next, on the command line, navigate to a directory that is *not* already a GitHu
 ```
 $ git status
 ```
-and making sure the response is "fatal: not a git repository (or any of the parent directories)."
+and making sure the response is "fatal: not a git repository (or any of the parent directories)." If you do not get this response, it means you are in an existing git repository. You cannot create one git repository inside another, so if this is the case, use the command
+```
+$ cd ..
+```
+to move to the parent directory. Once you're in the parent directory, check the status again to make sure you're not in a repository. Keep doing this until you're not in a repository.
 
 Make a new folder called **02_git**:
 ```
@@ -84,4 +88,7 @@ The last step is to push your changes! Run the command:
 ```
 $ git push
 ```
-If you go back to GitHub and look at the repository, you can now see the updated README!
+
+## Step 4: Seeing your changes in GitHub
+
+If you go back to GitHub and look at the repository, you can now see the updated README! You can also see the history of changes you've made to the repository. To do so, click on the text that says "x commits" right below the green **Code** button. This will take you to a page showing the history of commits you've made. Click on any commit (e.g. the one that says 'Updated README'), and GitHub will show you what files have been changed since the previous commit and how. 
