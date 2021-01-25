@@ -45,7 +45,6 @@ Here, I can now see that I'm in the folder `/Users/paul`
 * Each slash means that part to the right is *inside* the folder to the left (in this example, the `paul` folder is inside the `Users` folder)
 * These slashes might go the other direction depending on your operating system, but they work the same way
 
-
 You can verify for yourself how this works by looking at your folders in the finder (Mac) / file explorer (Windows). Here, in my finder we can see that the `paul` folder is inside the `Users` folder
 
 <img src="images/command_line_3.png" width="500">
