@@ -2,50 +2,72 @@
 
 In this challenge, you will: 
 
-* Fork the class GitHub repository
-* Customize your own README
+* Create a GitHub repository
+* Clone this repository to your local computer
+* Customize your README
 * Push your changes to GitHub
 
-## Step 1: Forking the repository
-
-Go to the [GitHub repository containing the class code](https://github.com/Justice-Through-Code/jtc_class_code). In the top left, you will see the owner and name of the repository: `'Justice-Through-Code/jtc_class_code'`. Click the button that says `Fork` in the top right corner. You will be redirected to your forked repository. You can see that you own this copy of the repository by looking at the top left corner, where the owner and name will now show: `'{your_username}/jtc_class_code'`.  
-
-## Step 2: Customizing your own README
-
-README files tell users what the purpose of a repository is, and pretty much every repository you'll see will have a README file. We will now create a README file for the repository you just forked.  
-
-First, create a directory called `jtc_class_code`. Next, open up an empty file in your text editor of choice (Atom, Sublime, etc). Save this file with the name `README.md` in the `jtc_class_code` directory. By saving it with the ending '.md', you have designated the file as a Markdown file. Markdown allows you to easily customize the appearance of your text files with just a few shortcuts. This document is also written in Markdown!
-
-In your README file, write whatever you would like. For now, you don't need to worry about formatting the Markdown in special ways, but you can find tips and tricks for using Markdown [here](https://www.markdownguide.org/cheat-sheet/). Make sure to save any changes you make to this file!
-
-## Step 3: Pushing your changes to the repository
-
-After you have customized your `README.md` file, you are ready to push it to the repository you forked. 
-
-First, open up the terminal. Navigate to the `jtc_class_code` directory where you saved your README. Once you are in the correct directory, you need to set this up as a git repository. 
+## Step 0: Customizing Git
 
 ### *** If you have already connected your GitHub account to your computer, you can skip this step. ***
+
 To connect your GitHub account, run the commands:
 ```
 $ git config --global user.name "your_username"
+
 $ git config --global user.email "your_email@columbia.edu"
-```
-Next, we need to initialize this directory as a git repository. Run the command:
-```
-$ git init
-```
-This directory is now a git repository, but it's not connected to the repository you forked. To connect the local and remote repositories, run the command and replace `{your_username}` with your GitHub username:
 
-```
-$ git remote add origin https://github.com/{your_username}/jtc_class_code.git
+$ git config --global core.editor "code --wait"
 ```
 
-Since the forked repository already has content, you must retrieve that content by pulling it. Run the command:
-```
-$ git pull origin master
-```
+## Step 1: Creating the repository
 
-Now, you can see the existing content as well as your new README by checking the status of the repository. This command will show you whether each file is untracked, tracked and unstaged, or tracked and staged. Run the command:
+Go to the [GitHub](https://github.com/). In the top right, you will see a plus sign. Click on the plus sign and then click **New Repository**. Name this repository `02_git_test_repo`. Leave the privacy setting as public. Check the box that says **Add a README file**. When you're done, click the button that says **Create Repository**. 
+
+## Step 2: Cloning the repository
+
+On the GitHub page for your newly created repository, there is a green button labeled **Code**. Click this button, and then click on the word **HTTPS** so that it is underlined in orange. Next, click on the clipboard icon next to the URL to copy the URL. 
+
+
+Next, on the command line, navigate to a directory that is *not* already a GitHub repository. You can verify this by running:
+```
+$ git status
+```
+and making sure the response is "fatal: not a git repository (or any of the parent directories)."
+
+Make a new folder called **02_git**:
+```
+$ mkdir 02_git
+```
+Move into this folder:
+```
+$ cd 02_git
+```
+Check that the folder is empty by listing all the files in it:
+```
+$ ls -al
+```
+Clone your GitHub repository into this folder:
+```
+$ git clone https://github.com/{your_username}/02_git_test_repo.git
+```
+Now, when you list all the files, you'll see a new folder called `02_git_test_repo`.
+
+## Step 3: Customizing your README
+
+Move into this folder:
+```
+$ cd 02_git_test_repo
+```
+List the files again and see that there is a README.md file. README files tell users what the purpose of a repository is, and pretty much every repository you'll see will have a README file. The '.md' file ending designates it as a Markdown file. Markdown allows you to easily customize the appearance of your text files with just a few shortcuts. This document is also written in Markdown!
+
+To customize your README, open up this file in VS Code, and write whatever you would like. For now, you don't need to worry about formatting the Markdown in special ways, but you can find tips and tricks for using Markdown [here](https://www.markdownguide.org/cheat-sheet/). Make sure to save any changes you make to this file!
+
+## Step 4: Pushing your changes to the repository
+
+After you have customized your `README.md` file, you are ready to push it to the repository you created. 
+
+You can see the content of your repository by checking its status. This command will show you whether each file is untracked, tracked and unstaged, or tracked and staged. Run the command:
 ```
 $  git status
 ```
@@ -55,11 +77,11 @@ $ git add README.md
 ```
 You can check the status again to see that the file is now tracked and staged. Next, we want to commit the changes to git history. To do so, run the command:
 ```
-$ git commit -m 'Created README'
+$ git commit -m 'Updated README'
 ```
 
 The last step is to push your changes! Run the command:
 ```
-$ git push -u origin master
+$ git push
 ```
-If you go back to GitHub and look at the forked repository, you can now see the updated README in the repository!
+If you go back to GitHub and look at the repository, you can now see the updated README!
