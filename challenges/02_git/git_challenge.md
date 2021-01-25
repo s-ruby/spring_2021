@@ -89,6 +89,6 @@ The last step is to push your changes! Run the command:
 $ git push
 ```
 
-## Step 4: Seeing your changes in GitHub
+## Step 5: Seeing your changes in GitHub
 
 If you go back to GitHub and look at the repository, you can now see the updated README! You can also see the history of changes you've made to the repository. To do so, click on the text that says "x commits" right below the green **Code** button. This will take you to a page showing the history of commits you've made. Click on any commit (e.g. the one that says 'Updated README'), and GitHub will show you what files have been changed since the previous commit and how. 
