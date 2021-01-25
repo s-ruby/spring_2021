@@ -1,6 +1,6 @@
 # Before class
 
-* Install the text editor Atom
+* Install the text editor [VSCode](https://code.visualstudio.com/)
 * Install Anaconda
 
 # Outline of class agenda
@@ -44,7 +44,6 @@ Here, I can now see that I'm in the folder `/Users/paul`
 **What do the slashes mean?**
 * Each slash means that part to the right is *inside* the folder to the left (in this example, the `paul` folder is inside the `Users` folder)
 * These slashes might go the other direction depending on your operating system, but they work the same way
-
 
 You can verify for yourself how this works by looking at your folders in the finder (Mac) / file explorer (Windows). Here, in my finder we can see that the `paul` folder is inside the `Users` folder
 
@@ -127,9 +126,3 @@ There is a special set of symbols for the directory outside the one you are in, 
 If I'm still in my `Desktop` folder, then I go out of this folder with `cd ..`, I'll be back in `/Users/paul/`
 
 <img src="images/command_line_10.png" width="500">
-
-
-
-```python
-
-```
