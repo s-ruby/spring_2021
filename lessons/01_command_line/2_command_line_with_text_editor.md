@@ -53,7 +53,7 @@ As an example, since `hello_world.py` for me is in a folder called `practice_1` 
 <img src="images/command_line_12.png" width="600">
 
 
-Then, when I open the file, I see something this in VSCode. Now we can edit it here! A lot of the time, I like do something like this, with the command line on one side (left), and the text editor on the other (right), because we will use them together! 
+Then, when I open the file, I see something this in VSCode. Now we can edit it here! A lot of the time, I do something like this, with the command line on one side (left), and the text editor on the other (right), because we will use them together! 
 *   You *can* use the special Terminal that is built in with VSCode in some circumstances, but for the purposes of this class we will not use this (it may causes some problems with compatibility of commands across systems)
 
 <img src="images/command_line_13.png" width="800">
