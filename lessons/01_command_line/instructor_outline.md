@@ -17,13 +17,13 @@
 * Show a few examples of using `cd` with `pwd` and `ls` to explore different directories
 * Demonstrate 'tabbing out' once you have typed part of the directory name
 
-
 ## 4. Listing files/directories with `ls`
 * Explain the abbreviation
 * Demonstrate `ls` command
+    * May need to use `dir` for PC 
 * Show that this is equivalent to looking at files in finder/Windows explorer
 * Introduce `ls -l` with flag for detailed file info
-
+  
 ## 5. Displaying text file contents with `cat` 
 * Explain the abbreviation
 * Make or put some sort of text file in Desktop or Documents, and demonstrate printing contents
@@ -31,7 +31,7 @@
 
 ## 6. Show how to make directories with `mkdir`
 * Explain the abbreviation
-* Make a directory `practice_1` on Desktop and `ls` into the directory
+* Make a directory `practice_1` on Desktop and `cd` into the directory
 
 
 ## 7. Creating files with `touch`
