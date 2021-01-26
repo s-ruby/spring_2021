@@ -11,11 +11,17 @@
 
 During this class, you will:
 
-1. Learn what Git & Github are, and why they're useful
-2. Set up Git on your computer
-3. Use Git for version control
-4. Sync your work to the cloud with Github
- 
+* Learn what Git & Github are, and why they're useful
+* Set up Git on your computer
+* Learn how to make a new repository on Github.com
+* Learn how to clone a repository from Github.com to your computer
+  * `git clone`
+* Use Git for version control
+  * `git status`
+  * `git add`
+  * `git commit`
+* Sync your work to the cloud respository with Github
+   * `git push`
 
 # Class 
 
@@ -43,11 +49,29 @@ Github is a little bit different from Git. While Git is the version control syst
 
 By the end of this lesson, you'll also be setting up your own Github repository!
 
-## 2. Setting up Git on your computer
+## 2. Making a new Github repo on Github.com
+
+The first step is to make a new repository on Github to sync with the one on your computer. Log into your Github account online, then look for the '+' button near the top right to make a new repo.
+
+<img src="https://swcarpentry.github.io/git-novice/fig/github-create-repo-01.png" width="800">
+
+Choose 'new repository' from the dropdown menu. You should see the below menu pop up next. Use 'example_git' for the repository name, add whatever description you like, and set it to private. Let's also choose to initalize with a readme file. It will look a little like this one:
+
+<img src="https://swcarpentry.github.io/git-novice/fig/github-create-repo-02.png" width="800">
+
+
+After confirming, you'll see your new Github repo. It won't have much in it now -- in fact, just the `README.md` file. 
+
+**Note:** this version of the repository on Github.com is stored entirely on the cloud, and is also called 'remote', or 'main'
+
+
+## 3. Setting up Git on your computer 
+
+### *Note: these steps only need to be done once!*
 
 Git is most often used from the command line (just like how we've been running python scripts), although there are other ways to use it. For the most part, all of the ways we'll use Git today will be from the command line. When you first set up Git on your computer, you'll need to do a few extra things to configure it. These are setup steps you have to do **once only**
 
-#### Git Config
+#### Setting up the git config file
 
 Using the command line, you'll first need to tell Git what your user name is:
 
@@ -61,33 +85,70 @@ Then, you'll want to set up an email address to associate with your Git activity
 $ git config --global user.email "paul.bloom@columbia.edu"
 ```
 
+Last, we'll set up VSCode as the default text editor for git. 
+* This means that if git needs to start up a text editor on your computer (we'll talk about this later, but it could happen if you forget a commit message or hit a merge conflict), it will start VSCode by default
+
+
+```console
+$ git config --global core.editor "code --wait"
+```
+
 Now you should be all set up to start using Git on your computer!
+## 4. Cloning a Github repository to your computer
 
-## 3. Using Git for version control
+The repository we set up is on the cloud, on Github.com, but it isn't yet on the hard drive of the computer you are using. To do this, or to connect what is 'local' to this computer, we will 'clone' the remote repository from the cloud. This will literally make a copy of what is on the cloud in a directory on your computer, and you'll be able to access the files via the command line, finder, etc. See more info about cloning [here](https://git-scm.com/book/en/v2/Git-Basics-Getting-a-Git-Repository).
 
-### Initializing a folder with git version control
+### Make sure you are NOT already in a git repository before cloning!
 
-First, you can set up a new folder on your computer. A git-controlled folder starts out in basically the same way as any other folder. Let's make a directory called 'example_git' in your class folder, then navigate into it
+It is always important to check that you are not already inside a git repository on your computer before cloning. This is because it can be very confusing (and cause a lot of problems with managing files) to have one git repo inside another. 
 
-
-```console
-$ mkdir example_git`
-$ cd example_git`
-```
-
-When you run `ls` in this folder you'll see that there are no files.
-
-Now, we can initialize this folder as a git repository by running the following:
+So, to do this, first run:
 
 ```console
-$ git init
+$ git status
 ```
 
-Now, if you run `ls -a` you'll notice that there is a hidden file called .git in the repository. This is what will track all other files' histories.
+If you get a message something like *fatal: not a git repository (or any of the parent directories): .git*
+* You are all set! Go ahead and clone, because this is telling you that the folder you are in is not a git repository
 
-### Adding (staging) files
+If you get **anything** indicating an actual git status, 
+* **You are in a git repository and should move out of the folder with `cd ..` and check again before cloning**
 
-First, we'll make a text file to start tracking using Git version control. 
+### Using `git clone`
+
+Now that you've confirmed you are not inside a git repo already, you can go ahead and clone. The syntax of this command is `git clone https://github.com/{your github username}/{name of the repository}.git`
+
+In my case, I ran: 
+
+```console
+$ git clone https://github.com/pab2163/example_git.git
+```
+
+Once you run this, if you run `ls`, you should now see that there is a directory called `example_git` inside your current directory. If you go inside of it, you'll see that the README.md file is in there!
+
+**Note:** Once we have cloned the repo once, we don't need to do it again. We'll come to this later, but future syncs coming from the remote cloud version to the local computer can be done with `git pull`
+* think of this as the difference between getting the repo set up on your computer in the first place (`git clone`) and refreshing the contents from the cloud (`git pull`)
+* Don't worry too much about this now! We'll talk about `git pull` later
+
+## 5. Using Git for version control
+
+Now that you have a git repository cloned to your computer, there are several git commands (also run from the command line) that will be very useful for managing your repository. 
+
+### `git status`
+
+You actually already ran this before, but now that we are in a git repo, this gives us some useful output! Running `git status` tells us what is NEW in the repository since the last commit. This might be confusing, but once we make a commit (keep going if this doesn't make sense), you'll start to see how useful this is. 
+
+If we run:
+
+```console
+$ git status
+```
+
+Now it tells us we are up to date
+
+### Adding (staging) files with `git add`
+
+First, we'll make a text file to start tracking using Git version control. We can make it by using `touch` or from VSCode
 
 ```console
 $ touch file1.txt
@@ -129,9 +190,9 @@ $ git commit -m 'adding file1.txt'
 
 Great! Now you've made a snapshot of your work at this point in time! Even as we edit file1.txt in the future, we'll be able to use git to return to this version if we need to.
 
-If you run `git status` again now, you'll see a message like 'On branch master nothing to commit, working tree clean'. This might be surprising, but it actually means that **since the last commit**, there are no new changes. 
+If you run `git status` again now, you'll see a message like 'On branch main nothing to commit, working tree clean'. This might be surprising, but it actually means that **since the last commit**, there are no new changes. 
 
-### Getting the workflow down
+5. ## Getting the workflow down
 
 <img src="https://miro.medium.com/max/686/1*diRLm1S5hkVoh5qeArND0Q.png" width="500">
 
@@ -168,75 +229,36 @@ For the most part, we run `git add ...` before every `git commit ...`. Why do we
 Great! You've now had some practice with the Git workflow. You'll use this same general workflow a LOT throughout the rest of the course when saving version history for your files. 
 
 
-## 4. Syncing your work to the cloud with Github
-
-So far, you've only been working with version control with files on your computer. Now, we'll learn how to sync them to the cloud using Github!
-
-#### Making a new Github repo
-
-The first step is to make a new repository on Github to sync with the one on your computer. Log into your Github account online, then look for the '+' button near the top right to make a new repo.
-
-<img src="https://swcarpentry.github.io/git-novice/fig/github-create-repo-01.png" width="800">
-
-Choose 'new repository' from the dropdown menu. You should see the below menu pop up next. Use 'example git' for the repository name, add whatever description you like, and set it to private. Don't initialize with a Readme file now -- we'll handle that later. 
-
-<img src="https://swcarpentry.github.io/git-novice/fig/github-create-repo-02.png" width="800">
+## 6.  `git push`: syncing work back to the cloud
 
 
+When your repository is synced with Github, you can continue to use `git add` and `git commit` in the same way to store changes on your computer. 
+* However, up to this point -- these committed changes are not yet on the remote version on Github. To get these there, we will need to *push* them
 
-After confirming, you'll see your new Github repo. It's empty so far. 
-
-#### Syncing your local repository with the online Github repository
-
-What you'll want to do next is follow the instructions to push an existing repository from the command line.
-
-<img src="images/git_push_1.png">
-
-As shown, run these lines from the command line inside the Git repository on your computer, replacing the web address with the address of your Github repository (it should end in '.git') 
-
-```console
-$ git remote add origin https://github.com/pab2163/example_git.git
-$ git push -u origin master
-```
-
-After running the second line, you should see something like this, indicating that you sucessfully 'pushed' your updates to the online (or 'remote') Github repo:
-
-<img src="images/git_push_2.png" width="500">
-
-
-Then, if you refresh the page for your online Github repo, you should see your files there, something like this:
-
-
-<img src="images/git_push_3.png">
-
-Great! Your files are now online!
-
-#### Adding a readme file for your Github file repo & pushing more changes to Github
-
-Many Github repositories have 'README' files, which give users a description about what is in the repository, and sometimes a guide for how to use the code. To add a readme file, go back to the command line inside the repository on your computer and make a file called 'README.md'
-
-```console
-$ touch README.md
-```
-
-Then, you can use the text editor of your choice (for example sublime) to edit your README.md file. This file is in Markdown format, which uses '#' to indicate big title text, and double asterisks surrounding text to make it bold. Try making a title, author, and description of your repository similar to below:
-
-<img src="images/readme_md.png">
-
-When your repository is synced with Github, you can continue to use `git add` and `git commit` in the same way to store changes on your computer. Then, when you want to push those changes to your online Github repository, you can run:
+Then, when you want to push those changes to your online Github repository, you can run:
 
 ```console
 $ git push
 ```
 
-This will **push** what's on your local computer to the online repo. Try staging the new README.md file, commiting that change, and pushing your changes now. When you refresh your Github repository online, now your README.md will show up in a nice format:
+This will **push** what's on your local computer to the online repo. Try staging everything, then committing and pushing the changes. 
 
-<img src="images/readme_2.png">
+**Note:** If this is your first time pushing, some systems may ask you to enter your username and password to set up a connection to your github account.
 
-Great! Now you've added a README with info about your repository, and learned how to push more changes to Github. In the future, you'll use a similar process for updating other files. 
+## 7. Inspect the changes on github.com
+
+If you refresh the repository webpage for `example_git` on Github.com, you should see your new changes there.
+
+Great! Now you've added the changes you made on your computer to the remote repository in the cloud on Github.com, and learned how to push more changes to Github. In the future, you'll use a similar process for updating other files. 
+
+### Viewing your commit history
+
+Right under the green 'Code' button in your repository, click where it says '# commits'. This will take you to a very helpful menu where you can review your commit history. Remember having to write all those pesky commit messages? Now you can see the reason -- this saves a log for you, so each commit message can help you figure out what changes were made there.
+
+Try exploring each of the commits and see if you can figure out how Github highlights what the changes were for each file for each commit. 
 
 
-#### Workflows using Github
+### Workflows using Github
 
 Now, in addition to `git add`, and `git commit`, we integrate `git push` into our workflow to sync our online repository with work on our local computer. Check out the diagram below for a good schematic of this:
 
@@ -254,7 +276,7 @@ Some additional repos that might be interesting:
   * [A repo from the Vera Institute of Justice with incarceration data from 1970-2017](https://github.com/vera-institute/incarceration_trends)
   * [A repo for the Spotipy python API](https://github.com/plamere/spotipy) (a way of accessing Spotify data with python)
 
-# Beyond...
+## Beyond...
 
 There are many more useful things you can do with Github beyond what we've learned today. You can find more info in the [Software Carpentry Git Lesson](https://swcarpentry.github.io/git-novice/), but later on in the course we'll also come back to a few more Git/Github tools, especially for using Github in a collaborative way.
 
