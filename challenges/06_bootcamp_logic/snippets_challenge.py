@@ -34,7 +34,7 @@ print()
 
 print("Code Snippet 3:")
 
-#modify the code below so the assert statement passes
+#modify the comparison operator below so the assert statement passes
 #update the print statement to reflect changes to the code
 
 a = 1
@@ -49,6 +49,7 @@ print()
 print("Code Snippet 4:")
 
 #modify exactly one boolean operator in the assignment of d, so that d evaluates to False
+#replace the print statement with your own explanation
 
 d = ((5 > 7) or not (8 < 20) or True)
 print("TO DO: Explain how d is set to False")
