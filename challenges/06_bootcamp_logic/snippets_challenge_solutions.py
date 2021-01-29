@@ -65,9 +65,8 @@ n = "goat"
 
 o = (m != n)
 
-# Python is case-sensitive
+# Python is case-sensitive so m and n are not equal
 print (f"The value of o ({o}) is True since Python is case-sensitive.")
-assert(o == True)
+assert(o == True) #Do not change this line
 
 print()
-
