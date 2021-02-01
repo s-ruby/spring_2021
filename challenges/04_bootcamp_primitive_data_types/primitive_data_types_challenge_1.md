@@ -26,7 +26,7 @@ In your personal folder inside your pod git repo, make a script called `temperat
 
 6. If you haven't already, go through your script and add a comment for questions 1-5 explaining what your code is doing.
 
-### Awesome job! Now, let's add, commit, and push your completed script to your pod Github repo
+### Awesome job! Now, add, commit, and push your completed script to your pod Github repo on your branch, then submit a pull request
 
 **Note: make sure you push to your POD repo where the base version is maintained by your TA, not the general JTC repo where the base version is maintained by the `Justice Through Code` organization**
 
@@ -40,12 +40,12 @@ Then commit to take a 'snapshot':
 $ git commit -m 'adding temperature.py challenge'
 ```
 
-Then push to the remote online!
+Then push to the remote online on your branch!
 
 ```console
-$ git push origin master
+$ git push origin [your_branch_name]
 ```
 
-Now, go to your online github repository and make sure the changes have been pushed correctly! 
+Now, go to your pod github repository and make sure the changes have been pushed correctly to your branch, then submit a pull request!
 
 **Congrats! You finished the python bootcamp day1 challenge!!**
