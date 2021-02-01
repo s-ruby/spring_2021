@@ -2,8 +2,8 @@
 
 <img src="https://storage.googleapis.com/ltkcms.appspot.com/fs/yd/images/cover/thermometer-in-snow.base?v=1591222156" width="650">
 
-
-In your jtc_class_code git repository, in the challenges folder, first make a folder called `03_primitive_data_types_part_1`. Inside this folder, you can make a script called `temperature.py` and run it using `python temperature.py` to verify you get the expected output. 
+## Setup
+In your personal folder inside your pod git repo, make a script called `temperature.py` and run it using `python temperature.py` to verify you get the expected output. 
 
 ### The formula for converting between fahrenheit and celsius is to first subtract 32, then multiply by 5/9. Can you do the following in python?
 
@@ -26,7 +26,9 @@ In your jtc_class_code git repository, in the challenges folder, first make a fo
 
 6. If you haven't already, go through your script and add a comment for questions 1-5 explaining what your code is doing.
 
-### Awesome job! Now, let's add, commit, and push your completed script to your `jtc_class_code` github repo
+### Awesome job! Now, let's add, commit, and push your completed script to your pod Github repo
+
+**Note: make sure you push to your POD repo where the base version is maintained by your TA, not the general JTC repo where the base version is maintained by the `Justice Through Code` organization**
 
 Remember, you'll do this from the command line. First add: 
 ```console
