@@ -1,9 +1,11 @@
-# Primitive Data Types Challenge 2: Storing and calculating 2020 NBA playoff statistics 
+# NBA Challenge: Storing and calculating 2020 NBA playoff statistics 
 
 <img src="https://clutchpoints.com/wp-content/uploads/2020/04/nba-9.jpg" width="800">
 
 
-In this challenge, we're giving you a script called `nba_challenge.py` that you'll be working on to calculate some 2020 NBA playoff stats. To get started, make a folder inside your `jtc_class_code/challenges` called `04_primitive_data_types_part_2`, and put `nba_challenge.py` in there. You can use `ls` inside the folder to make sure the `nba_challenge.py` script is really in there!
+In this challenge, we're giving you a script called `nba_challenge.py` that you'll be working on to calculate some 2020 NBA playoff stats. You'll use this to practice your skills at working with primitive data types in python.
+
+*To get started put `nba_challenge.py` in your personal folder inside your pod repo.*
 
 In the 2020 NBA playoffs, Jamal Murray, Fred VanVleet, and James Harden rank #1, #2, and #3 respectively for the number of 3-point shots made at 46, 43, and 37. 
 
@@ -56,14 +58,9 @@ This is a HUGE chunk of text. Can you add **escape characters** to print out thi
 * Take each player's three point percentage (from part 2.5) and convert it to an integer, then print it out.
   * What do you notice here?
 
-### Challenge 4: Pushing to github!
+### Challenge 4: Pushing to your branch of your pod repo, and submit a pull request
 
-Great job! Now, as the final part of your workflow for this challenge, let's stage (`git add`), commit (*don't forget a commit message*), and push the `nba_challenge.py` script you worked on to your `jtc_class_code` github repository. 
-
-
-* Remember to check your Github repo online at the end to make sure this worked
-
-<img src="https://lh3.googleusercontent.com/proxy/-lgo7ecGjy4FR2P4t0QG50Up_33hsglKpgdTOHPJoNqvcHdedUEW8ib8EhucC_o7NvI0j4uheOc3pEY9l-SdpzyK6WPTXbE" width="400">
+Same as previous challenges! Need a reminder? See [the git collab challenge here](https://github.com/Justice-Through-Code/spring_2021/blob/main/challenges/03_git_collab/03_git_collab.md#step-5-opening-a-pr-in-github)
 
 
-**Congrats! You finished the NBA-themed primitive data types challenge 2!**
+**Congrats! You finished the NBA-themed primitive data types challenge!**
