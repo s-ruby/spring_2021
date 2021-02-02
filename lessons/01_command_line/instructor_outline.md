@@ -36,7 +36,7 @@
 
 ## 7. Creating files with `touch`
 * Make `hello_world.py` in the `practice_1` directory using `touch`
-    * This may not work on PC
+    * May need to use `echo` for PC users
 
 ## 8. VSCode as text editor
 * Open up VSCode and explain workflow with text editor
