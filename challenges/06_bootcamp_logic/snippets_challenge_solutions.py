@@ -49,7 +49,7 @@ print()
 
 print("Code Snippet 4:")
 
-d = ((5 > 7) or not (8 < 20) and True)
+d = (5 < 7) and not (8 < 20) 
 
 # Change second 'or' to 'and' to make d evaluate to false
 print("The value of d is False when we add an and operator between a False and True expression")
@@ -70,3 +70,4 @@ print (f"The value of o ({o}) is True since Python is case-sensitive.")
 assert(o == True) #Do not change this line
 
 print()
+print("CHALLENGE COMPLETE!")

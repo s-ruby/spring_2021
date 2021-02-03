@@ -1,4 +1,5 @@
 print("Challenge 3.1: Debug code snippets")
+#Debug each snippet in order
 
 print()
 
@@ -49,10 +50,9 @@ print()
 print("Code Snippet 4:")
 
 #modify exactly one boolean operator in the assignment of d, so that d evaluates to False
-#replace the print statement with your own explanation
 
-d = ((5 > 7) or not (8 < 20) or True)
-print("TO DO: Explain how d is set to False")
+d = (5 < 7) or not (8 < 20)
+# TO DO: Explain how d is set to False in a print statement
 assert(d == False) #Do not change this line
 
 print()
@@ -68,7 +68,7 @@ n = "goat"
 
 o = (m == n)
 
-print (f"The value of o ({o}) is True since Python is case-insensitive.")
+print (f"The value of o ({o}) is True since Python is case-sensitive.")
 assert(o == True) #Do not change this line
 
 print()

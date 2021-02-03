@@ -12,10 +12,10 @@ In this challenge, we are providing you 2 incomplete scripts - `snippets_challen
 
 ### Overview of the challenge
 
-There are 5 code snippets in `snippets_challenge.py` here that throw errors or give incorrect outputs as of now. Based on the lecture, try to debug these code snippets so that the errors are resolved and we have the correct output. 
+There are 5 code snippets in `snippets_challenge.py` here that throw errors or give incorrect outputs as of now. Based on the lecture, try to debug these code snippets so that the errors are resolved and we have the correct output. Snippets should be done in order. When a snippet is debugged, the program will run to the next snippet to debug. 
 
 Pay attention to the types of errors displayed in the terminal. 
-* Syntax errors means the program cannot compile.
+* Syntax errors means the program cannot run.
 * `AssertionError` means there is a logical error in the code caused by `assert()`. 
 * `assert()` is a way to test if a condition in your code returns `True`.
 
