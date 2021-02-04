@@ -14,6 +14,7 @@ Today we'll learn about **logic** in python. By the end of the lesson, you'll:
     * Get comfy with syntax for conditional statements (colons, indenting)
     * Get some experience with nested conditional statements
     * Using conditional statements with user input
+4. Feel comfortable using `assert()` to check whether a certain condition is true before the rest of your code runs    
     
 
 ## 1. Logical Operators
@@ -171,9 +172,10 @@ print(a < 10 and not a > b)
 
 ## 3. Conditional Statements
 
-Tell students that THIS is really where logic starts to come in useful
+* Tell students that THIS is really where logic starts to come in useful
+* Diagram that this is where INDENTS really start to matter
 
-### `if` statements
+### Introduce `if` statements
 
 ```python
 # assign a to be equal to 5
@@ -191,7 +193,7 @@ if a > 3:
 ```
 
 
-### `else`
+### Introduce `else`
 
 `else` is what we can use to tell python what to do if a condition is not met! So, if we return to the previous example, we can add an `else` statement below:
 
@@ -218,7 +220,7 @@ else:
 
 * This is because all the code inside the indented `if` statement is being run. 
 
-### `elif`
+### Introduce `elif`
 
 ```python
 a = 2
@@ -270,27 +272,6 @@ if b > 10:
 ```
 
 
-### Conditional statement syntax: colons + indents
-
-Remind students of the colon and indenting syntax here! Explain that this helps keep things organized
-
-### Nested conditions
-
-
-Introduce that nesting is possible, but that we'll come back to it later
-```python
-a = 10
-if a > 0:
-    print('a is positive')
-    
-    # a second level of nested logic
-    if a > 10:
-        print('a is greater than 10')
-    else:
-        print('a is not greater than 10')
-```       
-
-
 
 
 ### Conditional statements with user input
@@ -318,6 +299,23 @@ else:
     print("I don't understand.")
 ```
 
+## 4. Assertions
+ 
+* Explain that with we can also use `assert()` with a logical statement to get our code to stop and throw an error if a certain condition isn't met
+* Show that the Mitch Hedberg joke can be rerun using `assert()`
+
+```python
+
+# ask the user if they want to hear a joke
+answer = input("Do you want to hear a joke? (press y / n) ")
+
+# make sure the answer is 'y'. if not, throw an error
+assert(answer == 'y')
+
+print("I'm against picketing, but I don't know how to show it.")
+
+```
+
 
 # Overview of what we learned today
 
@@ -327,6 +325,7 @@ else:
 * Compound logic using `and`, `or`, and `not`
 * How to use the conditional statements `if`, `else`, and `elif`
 * How to get user input, and to use this with conditional statements
+* How to use `assert()` to thrown an error depending on a conditional statement
 
 
 All of these things are VERY powerful tools, especially once we combine them with new data types -- coming soon!

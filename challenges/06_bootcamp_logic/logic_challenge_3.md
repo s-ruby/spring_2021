@@ -55,7 +55,7 @@ Alex has $5000 in savings and he can buy 50 shares of Apple at the current price
 
 ### Challenge 3.3 - Push to Github
 
-Great job! Now, as the final part of your workflow for this challenge, let's stage (`git add .`), commit (*don't forget a commit message*), and push the `snippets_challenge.py` and `stocks_challenge.py` scripts you worked on to your `jtc_class_code` github repository.
+Great job! Now, as the final part of your workflow for this challenge, let's stage, commit, and push the `snippets_challenge.py` and `stocks_challenge.py` scripts you worked on to your branch of your pod's repo!
 
 
-* Remember to check your Github repo online at the end to make sure this worked
+* Remember to check your pod Github repo online at the end to make sure this worked

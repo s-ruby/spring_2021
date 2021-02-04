@@ -21,7 +21,7 @@ Today we'll learn about **logic** in python. By the end of the lesson, you'll:
     * Get comfy with syntax for conditional statements (colons, indenting)
     * Get some experience with nested conditional statements
     * Using conditional statements with user input
-    
+4. Feel comfortable using `assert()` to check whether a certain condition is true before the rest of your code runs    
 
 
 ## 1. Logical Operators
@@ -508,6 +508,40 @@ else:
 ```
 
 Try running this in a script, and try giving the responses 'y', 'n', or something else, and see how the code responds.
+
+## 4. Using `assert()` to check things before your code continues
+
+In many cases, it helps to be able to ONLY run the rest of a python script in the case that a certain condition is true, and throw an error otherwise. We can do this by *putting a logical statement inside the `assert()` function
+
+To see this, let's modify the previous example to ONLY continue if the user answers 'y'
+
+```python
+
+# ask the user if they want to hear a joke
+answer = input("Do you want to hear a joke? (press y / n) ")
+
+# make sure the answer is 'y'. if not, throw an error
+assert(answer == 'y')
+
+print("I'm against picketing, but I don't know how to show it.")
+
+```
+
+So, if the answer isn't 'y', we see the output:
+
+```console:
+Do you want to hear a joke? (press y / n) ,
+Traceback (most recent call last):
+  File "logic_practice.py", line 3, in <module>
+    assert(answer == 'y')
+AssertionError
+
+```
+
+**Note:** this isn't necessarily an *error* on your part per se -- you put this `assert()` function here because you *INTENDED* for the script to stop running if the user did not input a 'y'
+
+
+You can find more info/examples of assertions [here](https://www.tutorialspoint.com/python/assertions_in_python.htm)
 
 
 Pretty cool right? Now we're starting to see how powerful python / coding can be for handling user input and starting to **automate** processes on the 'back end'. A lot of this type of logic is used for apps and websites that handle user interaction, using a combination of python and other languages. 
