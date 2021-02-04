@@ -14,6 +14,7 @@ Today we'll learn about **logic** in python. By the end of the lesson, you'll:
     * Get comfy with syntax for conditional statements (colons, indenting)
     * Get some experience with nested conditional statements
     * Using conditional statements with user input
+4. Feel comfortable using `assert()` to check whether a certain condition is true before the rest of your code runs    
     
 
 ## 1. Logical Operators
