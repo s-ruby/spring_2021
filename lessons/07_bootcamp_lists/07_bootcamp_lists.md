@@ -29,7 +29,7 @@ A **list** in python is not so different from the everyday definition of a list,
 
 # 1. Storing data in lists
 
-*Let's make a script `bootcamp_scripts/list_practice.py` to practice working with lists.*
+*Let's make a script `list_practice.py` to practice working with lists.*
 
 
 Every list has a certain syntax:
