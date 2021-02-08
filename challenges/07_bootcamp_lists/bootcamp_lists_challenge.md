@@ -6,10 +6,13 @@
 
 In this challenge, we're giving you a script called `box_office_challenge.py` that you'll be working on to manage the list of the Top 100 Highest Grossing Movies at the Box Office from 1999. This year included classics like The Matrix, Fight Club, Sixth Sense and many others.
 
-To get started, make a folder inside your `jtc_class_code/challenges` called `07_bootcamp_lists`, and put `box_office_challenge.py` in there. You can use `ls` inside the folder to make sure the `box_office_challenge.py` script is really in there!
+To get started, pull the repository, and copy the `box_office_challenge.py` script from the challengse folder into your personal folder (ie using `cp` from the command line). You can use `ls` inside your personal folder to make sure the `box_office_challenge.py` script is really in there!
 
-### When you're done, "Push" to Github
+## Complete the challenge according to the instructions in the script
 
-As the final part of your workflow for this challenge, stage your files (`git add .`), commit (_don't forget a commit message_), and push the `box_office_challenge.py` script you worked on to your `jtc_class_code` github repository.
+Don't forget to comment your code!
 
-- Remember to check your Github repo online at the end to make sure this worked
+## When you finish, push to your changes to your personal branch of your pod repo, and submit a PR!
+*   **Remember:** when you set up the pull request on github, make sure the 'base repository' is the one set up by your TA for your pod, NOT the one called `Justice-Through-Code/pod_test_repo`
+
+<img src="images/pull_request_base_repo.png" width="800">
