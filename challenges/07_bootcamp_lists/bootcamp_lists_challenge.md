@@ -6,7 +6,7 @@
 
 In this challenge, we're giving you a script called `box_office_challenge.py` that you'll be working on to manage the list of the Top 100 Highest Grossing Movies at the Box Office from 1999. This year included classics like The Matrix, Fight Club, Sixth Sense and many others.
 
-To get started, pull the repository, and copy the `box_office_challenge.py` script from the challengse folder into your personal folder (ie using `cp` from the command line). You can use `ls` inside your personal folder to make sure the `box_office_challenge.py` script is really in there!
+To get started, pull the repository, and copy the `box_office_challenge.py` script from the challenges folder into your personal folder (ie using `cp` from the command line). You can use `ls` inside your personal folder to make sure the `box_office_challenge.py` script is really in there!
 
 ## Complete the challenge according to the instructions in the script
 
