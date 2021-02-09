@@ -56,7 +56,7 @@ print()
 
 print("Question 3")
 
-print("Imagine that any 1 of your most favourite restaurants closed down during the Covid. Remove the details of that restaurant from the dictionary fav_restaurants.")
+print("Imagine that any 1 of your most favourite restaurants closed down during Covid. Remove the details of that restaurant from the dictionary fav_restaurants.")
 
 # TODO: Remove 1 restaurant from the dictionary fav_restaurants.
 # TODO: Print the new dictionary. The new dictionary should contain only 2 restaurants.
