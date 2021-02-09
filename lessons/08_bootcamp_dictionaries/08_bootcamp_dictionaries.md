@@ -1,6 +1,6 @@
 # Bootcamp Class 8 - Dictionaries
 
-<img src="https://lh3.googleusercontent.com/proxy/ny3P1_KFgAOeOYfQT-PlWy2fhLndBNinkHMYdw05aIGaEWiKfciBtnBR27HbCmXjE78GhVhuTl0rqghx29sk9i0zLtIa7_nqHXMLAVxki08" width="500">
+<img src="https://lh3.googleusercontent.com/proxy/Mw1Z5gcj1XZrURnu4sMZrzDQJ6m1JEM3MgVu7opC_24OJ3SCKnY04aD4K-4AjQO0FBfKxWkNimg2RqA0PVHrIFPLwLo-cM56dskbbyew6-k" width="600">
 
 # Before class
 
