@@ -16,7 +16,7 @@ Today we'll learn about [**loops**](https://www.w3schools.com/python/python_for_
 3. Feel comfortable using the `range()` function with for loops to iterate across many items
 4. Understand how a **while loop** is different from a **for loop** and how to create one
 
-**Let's make a script in your github repo at `jtc_class_code/class_scripts/bootcamp_scripts/loop_practice.py` for the lesson today.**
+**Let's make a script in `loop_practice.py` for the lesson today.**
 
 
 # What is a loop?
