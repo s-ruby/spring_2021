@@ -17,8 +17,6 @@ Today we'll learn about [**loops**](https://www.w3schools.com/python/python_for_
 3. Feel comfortable exiting a loop using the `break` command
 4. Feel comfortable putting **loops inside loops** with **nesting**
 
-**Let's make a script in your github repo at `jtc_class_code/class_scripts/bootcamp_scripts/nested_loop_practice.py` for the lesson today.**
-
 
 # What is nesting?
 
