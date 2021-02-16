@@ -34,7 +34,7 @@ Assume there is a 10% sales tax. Don't forget to add this into the total bill!
 
 Make a python script `survey.py` that does the following:
 
-* Take user input at the command line of a list of at least ten (10) questions that you make up.
-* Your code should have multiple possible answers that will generate different messages to the user.
-* Survey should utilize multiple datatypes. 
+* Take user input at the command line of a list of at least ten (10) questions that you make up. Pick any theme you want!
+* Your code should print different messages to the user depending on how they answer each question.
+* The survey should utilize multiple datatypes. 
 * Bonus for usage of Boolean operators
