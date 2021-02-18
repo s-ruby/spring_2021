@@ -20,9 +20,6 @@ Today we'll learn about [**nested data**](https://holypython.com/intermediate-py
 4. Work with lists inside lists
 
 
-**Let's make a script in your github repo at `jtc_class_code/class_scripts/bootcamp_scripts/nest_practice.py` for the lesson today.**
-
-
 ## Nesting, revisited...
 
 Last time we talked about nesting with loops and logic -- now we'll be dealing with situations where the **data** are nested! We'll be going through examples of this with both lists and dictionaries. 
