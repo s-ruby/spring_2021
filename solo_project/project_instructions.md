@@ -5,7 +5,7 @@ The goal of this project is to make an app, either a *tip calculator* or *your o
 The requirements for your finished project are:
 
 1. You should set up a public Github repo that contains your code, and a `README.md` file. This repo with your app will be part of your code portfolio from this class, so keep it neat, and make the README file look nice using [markdown formatting](https://www.markdownguide.org/cheat-sheet/). Be sure to give it a title, and provide a brief summary of what your code does, and how to run it. **To submit your project, you will simply submit the link to your Github repo on Canvas**
-2. Your app must run propely in python from the command line, and should not require any software or external libraries. (python3 is best -- if you are using python2, please contact your TA to work something out)
+2. Your app must run propely in python from the command line, and should not require any software or external libraries.
 3. Whether you choose the tip calculator or the survey, your app must *be interactive and take user input* (see the guidelines for each option) at the command line. This means that your python code must respond appropriately based on what the user enters. 
 4. Your code must be well-commented. Demonstrate how much you understand!
 5. This project is an *individual* one! You can talk to your classmates for ideas, but all code should be your own.
@@ -37,4 +37,4 @@ Make a python script `survey.py` that does the following:
 * Take user input at the command line of a list of at least ten (10) questions that you make up. Pick any theme you want!
 * Your code should print different messages to the user depending on how they answer each question.
 * The survey should utilize multiple datatypes. 
-* Bonus for usage of Boolean operators
+* Bonus for usage of logical operators (`and`, `or`, & `not`)
