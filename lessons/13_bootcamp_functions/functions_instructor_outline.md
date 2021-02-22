@@ -24,7 +24,7 @@ range(100)
 ```
 
   * `func()` vs `object.func()`
-    * If the function has a period before it, it's a method
+    * If the function has a period before it, it's a method. For e.g. `text.upper()` is a string method.
     * We'll talk more about methods in a future class
 
 ## 2. Function syntax
