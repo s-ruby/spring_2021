@@ -58,8 +58,8 @@ def test_greeting_yuval():
 ```
 pytest greeting_test.py
 ```
+<img width="1331" alt="Screen Shot 2021-03-09 at 9 11 50 AM" src="https://user-images.githubusercontent.com/7483633/110483234-85f92400-80b7-11eb-9993-b61c150dabe3.png">
 
-INSERT SCREENSHOT
 
 We could also make this more readable by creating some variables...
 
@@ -98,7 +98,8 @@ def greeting(first_name, middle_name, last_name):
 
 When they run the tests in `greeting_test.py` file again, the tests will fail.
 
-INSERT SCREENSHOT
+<img width="1315" alt="Screen Shot 2021-03-09 at 9 10 18 AM" src="https://user-images.githubusercontent.com/7483633/110482999-47636980-80b7-11eb-966b-cd2218e05842.png"><img width="1332" alt="Screen Shot 2021-03-09 at 9 11 14 AM" src="https://user-images.githubusercontent.com/7483633/110483117-67932880-80b7-11eb-9ec3-5c66d0b34f47.png">
+
 
 This is actually a good thing! Failing test tells them the expected outputs were once different and now must be updated to reflect new requirements that led to code changes.
 
