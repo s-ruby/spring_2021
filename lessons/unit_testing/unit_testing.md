@@ -102,6 +102,20 @@ When they run the tests in `greeting_test.py` file again, the tests will fail.
 
 This is actually a good thing! Failing test tells them the expected outputs were once different and now must be updated to reflect new requirements that led to code changes.
 
+```python
+# adding ! to the expected output
+def test_greeting_george():
+    assert greeting("George", "Orson", "Welles") == "Hi, George Orson Welles!"
+# adding ! to the expected output
+def test_greeting_yuval():
+    assert greeting("Yuval", "Noah", "Harari") == "Hi, Yuval Noah Harari!"
+```
+
+Run `pytest` again and the tests should now pass again!
+
+<img width="1331" alt="Screen Shot 2021-03-09 at 9 11 50 AM" src="https://user-images.githubusercontent.com/7483633/110483885-25b6b200-80b8-11eb-8757-7c220f4bdc12.png">
+
+
 # Structuring your files
 
 Pytest recommends the following [directory structures](https://docs.pytest.org/en/reorganize-docs/new-docs/user/directory_structure.html) for python modules and their tests:
