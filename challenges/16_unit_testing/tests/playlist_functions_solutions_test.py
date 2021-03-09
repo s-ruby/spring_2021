@@ -20,7 +20,10 @@ def playlist():
 
 # Question 1: Complete the test for get_playlist_titles function
 def test_get_titles(playlist):
-	assert get_playlist_titles(playlist)
+	expected = ["Sometimes", "Mothership Connection (Star Child)", "Another Brick in the Wall", 
+	"Unfunky UFO", "Mississippi Goddamn", "Four Women", "Killing Me Softly", "Killing Me Softly"]
+	actual = get_playlist_titles(playlist)
+	assert actual == expected
 
 # Question 2: Write two test functions for search_by_artist
 def test_search_pink(playlist):
