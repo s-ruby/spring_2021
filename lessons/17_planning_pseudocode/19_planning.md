@@ -1,13 +1,63 @@
-# Bootcamp class 20 - Planning More Abstractly
-
+# Pseudocode & Planning
 
 ![title](https://memegenerator.net/img/instances/68471051.jpg)
+
+### A game plan for your code
+
+Sooner or later, we're all stumped by complex problems that require some thought and careful planning to solve by coding. We can think of coding as three steps:
+
+- Pseudocoding or a rough plan of the code we will write,
+- Writing actual code
+- And finally, optimizing or cleaning up the code we wrote.
+
+### What is pseudocode?
+
+It is not a new language. **Pseudocode** is a way of expressing your code in your own words without worrying too much about language syntax. It is tempting to jump into writing code and figuring things out on the way, but pseudocoding helps us:
+
+- Break down a large task into smaller tasks, described in our own words
+- Create a blueprint for our code implementation
+- Identify steps that might need further research (looking up code solutions on stackoverflow, etc)
+
+Pseudocoding helps us understand the requirements of the program before we spend our efforts in writing complex code.
+
+# Demo 1
+
+Let's take a simple function that calculates the average of numbers in a list
+
+```python
+def average(nums):
+    pass
+```
+
+The keyword `pass` is a placeholder you can use when you have nothing written inside the body of your function. If you run the function as is, nothing happens, which is what we want until we write actual code
+
+### Pseudocoding
+
+```python
+def average(nums):
+    # sum of nums list
+    # divide sum by the number of values in nums list
+    # return output
+    pass
+```
+
+### Writing actual code
+
+```python
+def average(nums):
+    # sum of nums
+    total = sum(nums)
+    # divide sum by the number of values in nums list
+    average = total/len(nums)
+    # return output
+    return average
+```
 
 # Planning with nested data
 
 Often, nested data structures make planning ahead a little tricky! Today, we'll practice planning ahead to make some nested data structures and functions to work with them
 
-# Demo 1. Planning ahead with a 'shopping cart'
+# Demo 1. Planning ahead with a 'shopping cart' -- List vs. Dictionary
 
 I want to make a data structure here that sets up an online shopping cart so that we can keep track of:
 * the items in my cart
@@ -147,8 +197,6 @@ We can see that we get the same answer here too
 
 # Overview
 
-This lesson is *pretty* similar to the lesson from last class (and the challenge is too), except that we'll be asking you to work with nested data structures and think a little more abstractly about how to work with them:
-* how to add new items
-* how to update existing items
+Pseudocode and planning are hard! But, taking a step back from the code/syntax to _think about what you want to do and how to do it_ first can help you get a long way, and save a lot of confusion when it comes time to start coding. Especially when we have complex and nested data to deal with!
 
-Pseudocode is hard! But this type of planning will really help us figure out how to 'put together the pieces' and take on projects that are larger in scope.
+This type of planning will really help us figure out how to 'put together the pieces' and take on projects that are larger in scope.
