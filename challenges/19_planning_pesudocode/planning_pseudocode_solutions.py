@@ -1,20 +1,25 @@
 '''
-Planning challenge 2!
+Planning & pseudocode challenge!
 
 For each piece here, write out the pseudocode as comments FIRST, then write your code!
+
+At many points, you'll have to choose between using a list vs. dictionary. Justify your choices!
 '''
 
 
 '''
 1. Shipping
 
-You are building a system to handle shipping orders. Each order should be a dictionary that has 3 pieces of information:
+You are building a system to handle shipping orders. Each order should have 3 pieces of information:
 -destination (string) (for the purposes of this challenge this can be any place, no need to make a full address)
 -date_shipped (string)
 -weight (float) (how many pounds the package is)
 
+Will you choose to make each shipping order as a dictionary or list? Why?
+
 Assign 3 separate orders to 3 separate variables
 '''
+
 print('\nPART 1')
 
 # Make each order as a dictionary with 3 key/value pairs for each attribute
@@ -29,7 +34,7 @@ order3 = {'destination':'Los Angeles', 'date_shipped': '10/28/20', 'weight': 357
 
 Now, let's put the orders all into a database togther (all the orders are storedin 1 variable). 
 
-Your database can either be a dictionary or a list. 
+Your database as a whole can either be a dictionary or a list (hint, you'll want nesting!). 
 
 Print out the database to make sure all the info is in there. 
 
@@ -103,7 +108,7 @@ print(order_database_dictionary)
 '''
 4. Define a function called complete_order() to mark a specific order in your database complete
 
-This means that it should add a new key/value pair called 'complete' to a specific order, and set the value to True
+This means you'll need a new piece of data inside the order that is True when the order is complete.
 
 Test this out and print out your database to make sure it works!
 
