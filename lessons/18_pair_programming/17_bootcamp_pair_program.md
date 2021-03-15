@@ -21,7 +21,7 @@
 
 Two of the instructors will now do a demo of some pair programming for setting up some functions for making a script to make a 'twitter account'. 
 
-### `twitter functions.py`
+### `twitter_functions.py`
 
 This script defines some functions for working with a 'twitter' account:
 
@@ -49,7 +49,7 @@ def display_profile(account):
         print(tweet)
 ```
 
-### `test_twitter.py`
+### `demo_twitter.py`
 
 This script tests out the functions defined in `twitter_functions.py` to work with a demo 'twitter' account
 
@@ -73,7 +73,6 @@ print(number_of_tweets)
 display_profile(my_twitter)
 ```
 
-
-```python
-
+```
+python demo_twitter.py
 ```
