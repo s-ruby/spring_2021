@@ -72,7 +72,7 @@ print(number_of_tweets)
 # display the user profile
 display_profile(my_twitter)
 ```
-
+And then finally run:
 ```
 python demo_twitter.py
 ```
