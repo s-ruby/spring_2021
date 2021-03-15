@@ -120,13 +120,13 @@ Since we have a nested for loop and check all the possible pairs of the list, th
 
 Optimized solution:
 ```python
-def two_sum_optimized():
+def two_sum_optimized(nums, target):
     complements = {}
     
     for i in range(len(nums)):
         complement = target - nums[i]
         if complement in complements:
-            return (complements[complement], i)
+            return [complements[complement], i]
         else:
             complements[nums[i]] = i
             
