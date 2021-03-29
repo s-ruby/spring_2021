@@ -15,6 +15,7 @@ Today we'll learn about the **remaining two primitive data types in python, stri
 1. Be able to work comfortably with **string variables** (text) in python
 2. Be able to work comfortable with **boolean variables** (True/False) in python
 3. Be able to type convert strings to integer/float variables and vice versa
+4. Be able to use input()
 
 ## 1. Strings (text)
 
