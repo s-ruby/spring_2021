@@ -106,13 +106,3 @@ while (count < 5):
 
 print('done')
 ```
-
-## Looping through a string 
-
-Explain that can loop over individual characters in a string
-
-```python
-my_string = 'ice cream'
-for letter in my_string:
-    print(letter)
-```
