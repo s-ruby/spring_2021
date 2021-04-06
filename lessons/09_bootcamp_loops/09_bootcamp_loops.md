@@ -5,24 +5,24 @@
 # Before class
 
 * Make sure you feel comfortable working with both [lists](https://www.programiz.com/python-programming/list) and [dictionaries](https://www.programiz.com/python-programming/dictionary#:~:text=Python%20dictionary%20is%20an%20unordered,when%20the%20key%20is%20known.) in python
-* Make sure you're comfortable with logic in python -- review the [logic lesson](https://github.com/Justice-Through-Code/fall_2020/blob/master/lessons/06_bootcamp_logic/06_bootcamp_logic.md) if you'd like to refresh!
+* Make sure you're comfortable with logic in python -- review the [logic lesson](https://github.com/s-ruby/uxr_spring_2021/tree/main/lessons/04_bootcamp_logic) if you'd like to refresh!
 
 # Outline of class agenda
 
 Today we'll learn about [**loops**](https://www.w3schools.com/python/python_for_loops.asp) in python. By the end of the lesson, you'll:
 
 1. Feel comfortable using **for loops** to *iterate* through items in a list
-2. Feel comfortable using **for loops** to *iterate* through characters in a string
-3. Feel comfortable using the `range()` function with for loops to iterate across many items
-4. Understand how a **while loop** is different from a **for loop** and how to create one
+2. Feel comfortable using the `range()` function with for loops to iterate across many items
+3. Understand how a **while loop** is different from a **for loop** and how to create one
 
 **Let's make a script in `loop_practice.py` for the lesson today.**
 
 
 # What is a loop?
 
-You can kind of think of a loop as an 'apply all'. We use **loops** in python to iterate over sequential items (like lists, or even strings).
-* **Iterate** means that we go through each item, one-by-one, and do something each time
+You can kind of think of a loop as an 'apply all'. We use **loops** in python to do something to every item in a certain collection. For example, we could do something to every entry in a dictionary or to every third item in a list. 
+
+* We **iterate** using for loops, meaning that we go through each item and do something each time
 * Loops can be as simple as printing out each item in a list, or contain very complex logic and operations
 * Loops allow us to perform **many** operations **in few lines of code**
 
@@ -132,61 +132,7 @@ So, when we run this code we get
 ['HERE', 'ARE', 'MY', 'LOWER', 'CASE', 'WORDS']
 ```
 
-# 2. Looping through characters in a string
-
-So far, we've used loops only with lists. But, we can use them in a really similar way to loop through the individual characters in a string! Let's try it out:
-
-```python
-my_string = 'ice cream'
-for letter in my_string:
-    print(letter)
-```
-It's a bit annoying to look at the output of this one, but we get each letter printed out on its own line (even the spaces)
-
-```console
-i
-c
-e
- 
-c
-r
-e
-a
-m
-```
-
-We could use this to check if each letter is a vowel by combining this loop with a logical `if() `statement. For each character, we ask whether it is `in()` the list of vowels:
-
-```python
-my_string = 'ice cream'
-# define the vowels
-vowels = ['a', 'e', 'i', 'o', 'u']
-
-# loop throug each letter in the string and decide if a vowel or not
-for letter in my_string:
-    # this logical statement checks whether the letter is equal to ANY of the elements in vowels and returns TRUE if so
-    if letter in vowels:
-        print(f'{letter} is a vowel')
-    else:
-        print(f'{letter} is not a vowel')
-```
-
-So we get:
-```console
-i is a vowel
-c is not a vowel
-e is a vowel
-  is not a vowel
-c is not a vowel
-r is not a vowel
-e is a vowel
-a is a vowel
-m is not a vowel
-```
-
-Looks correct! We also get python telling us that a blank space is not a vowel, because the blank space is treated like a character, like any other!
-
-# 3. Loops with the `range()` function
+# 2. Loops with the `range()` function
 
 What if someone asked you to square all the numbers from 0 to 1000?
 * There's *no way* you would actually want to write down all of those numbers
@@ -220,44 +166,30 @@ However, where `range()` can come in most useful is in looping through lists usi
 lower_list = ['here', 'are', 'my', 'lower', 'case', 'words']
 for i in range(len(lower_list)):
     print(i)
+    print(lower_list[i])
 ```
 
 This prints out:
 
 ```console
 0
+here
 1
+are
 2
+my
 3
+lower
 4
+case
 5
+words
 ```
 
 The **key** thing here is that here, **i stands for the indices of `lower_list`, not the actual elements**. We are iterating through the elemtns of the list, but unlike earlier, i is just an integer that stands for each index in the list in turn. 
 
-If we want to, we can still access each **element of the list** this way by using bracket indexing.
 
-```python
-lower_list = ['here', 'are', 'my', 'lower', 'case', 'words']
-for i in range(len(lower_list)):
-    # use an f-string to show what the index and list element is
-    print(f'the index is {i} and the element is: {lower_list[i]}')
-```
-
-So, now we see both the index and the list element itself on the same line:
-
-```console
-the index is 0 and the element is: here
-the index is 1 and the element is: are
-the index is 2 and the element is: my
-the index is 3 and the element is: lower
-the index is 4 and the element is: case
-the index is 5 and the element is: words
-```
-
-Differentiating the **index from the list element** can be tricky in loops especially, but we'll practice this a lot!
-
-# 4. For loops vs. while loops
+# 3. For loops vs. while loops
 
 We've mostly talked about **for loops** today, but there is one other kind of loop in python that is really important to know about, the **while loop**.
 
@@ -314,7 +246,7 @@ We'll get to this question more later on, but we can think of some circumstances
 We learned about **loops** today! This included
 
 
-1. Using loops to iterate across lists and strings
+1. Using loops to iterate across lists 
 2. Using loops with different operations inside of them
 3. Using loops with the `range()` function
 4. Using while vs. for loops
